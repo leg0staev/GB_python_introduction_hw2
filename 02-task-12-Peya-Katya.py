@@ -5,12 +5,13 @@
 # Помогите Кате отгадать задуманные Петей числа.
 
 def LetsFindNums(sum, multiply: int):
-    for x in range(1001):
-        for y in range(1001):
-            if x + y == sum and x * y == multiply:
-                return x, y
-            # else:
-            #     return ("not exist", "not exist")
+    for x in range(sum):
+        y = sum - x
+        if x + y == sum and x * y == multiply:
+            break
+        else:
+            x = y = "not exist"
+    return x, y
 
 
 while True:
