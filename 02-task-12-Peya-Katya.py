@@ -9,8 +9,8 @@ def LetsFindNums(sum, multiply: int):
         for y in range(1001):
             if x + y == sum and x * y == multiply:
                 return x, y
-            else:
-                return ("not exist", "not exist")
+            # else:
+            #     return ("not exist", "not exist")
 
 
 while True:
